@@ -62,11 +62,11 @@ app.get('/info', (req, res) => {
 
 
 // Add route for home and using a REGEX to dynamic access to different routes 
-app.get('/', (req, res) => {
-  console.log('ruta pedid: ' + req.url)
-  //res.status(200).render("index", { pageTitle: 'home' });
-  //res.status()
-});
+// app.get('/', (req, res) => {
+//   console.log('ruta pedid: ' + req.url)
+//   //res.status(200).render("index", { pageTitle: 'home' });
+//   //res.status()
+// });
 
 // !!! Important we can use several methods to resolve dinyamic routes and avoid code duplication
 // Examples:
