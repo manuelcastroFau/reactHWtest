@@ -12,7 +12,7 @@ export default function GetStudent () {
     e.preventDefault()
 
     try {
-      const response = await axios.get(`http://localhost:5678/students/${studentId}`)
+      const response = await axios.get(`/students/${studentId}`)
       console.log(response.data)
 
       // Update studentData state and clear the error state

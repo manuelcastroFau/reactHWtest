@@ -31,7 +31,7 @@ export default function AddStudent () {
     }
 
     try {
-      const response = await axios.post('http://localhost:5678/students', studentData)
+      const response = await axios.post('/students', studentData)
       console.log(response.data)
       setResponse(response.data)
       setError(null)

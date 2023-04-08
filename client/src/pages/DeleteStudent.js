@@ -11,7 +11,7 @@ export default function DeleteStudent () {
     e.preventDefault()
 
     try {
-      await axios.delete(`http://localhost:5678/students/${studentId}`)
+      await axios.delete(`/students/${studentId}`)
       // Update successMessage state and clear the error state
       setSuccessMessage('Student has been deleted successfully')
       setError(null)
