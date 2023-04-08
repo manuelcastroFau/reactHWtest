@@ -121,7 +121,9 @@ app.post('/students', async function (req, res) {
     enrolled: req.body.enrolled
   };
 
-  const filter = { last_name: student.last_name };
+  // const filter = { last_name: student.last_name };
+  //$or: [{ inStock: true }, { name: "Apple Iphone 11" }] 
+  const filter = { $and: [{ last_name: student.last_name }, {first_name: student.first_name}] };
   const update = { $setOnInsert: student };
   const options = { upsert: true };
 
