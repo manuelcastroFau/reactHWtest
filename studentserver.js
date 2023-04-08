@@ -4,6 +4,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
 const { hostname } = require('os');
+//const path = require('path')
 
 
 const cors = require('cors');
@@ -34,7 +35,7 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(express.static('./hw9-students-react/build'));
+app.use(express.static('./client/build'));
 
 app.set("view engine", "ejs");
 
