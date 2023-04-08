@@ -10,7 +10,7 @@ export default function ListStudents () {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5678/students')
+        const response = await axios.get('/students')
         setStudents(response.data)
         console.log('this is response:\n', response)
       } catch (error) {
