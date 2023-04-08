@@ -15,7 +15,7 @@ export default function UpdateStudent () {
     e.preventDefault()
 
     try {
-      await axios.put(`http://localhost:5678/students/${recordId}`, {
+      await axios.put(`/students/${recordId}`, {
         first_name: firstName,
         last_name: lastName,
         gpa,

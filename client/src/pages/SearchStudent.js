@@ -22,7 +22,7 @@ export default function SearchStudent () {
 
     try {
       // gpa-search/:qvalue
-      const response = await axios.get(`http://localhost:5678/magic-search/${gpa}`, {
+      const response = await axios.get(`/magic-search/${gpa}`, {
 
       }
       )

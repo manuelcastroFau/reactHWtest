@@ -24,7 +24,7 @@ export default function SearchGPA () {
     try {
       // gpa-search/:qvalue
 
-      const response = await axios.get(`http://localhost:5678/gpa-search/${gpa}`, {
+      const response = await axios.get(`/gpa-search/${gpa}`, {
         params: { operation }
       }
       )
