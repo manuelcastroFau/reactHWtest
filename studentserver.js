@@ -17,6 +17,7 @@ const collection = database.collection('students');
 
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
+const path = require('path');
 
 const swaggerOptions = {
   swaggerDefinition: {
@@ -78,6 +79,10 @@ app.get('*-Student*', (req, res) => {
   console.log('route requested: ' + req.url)
   res.status(200).render(`${req.url}`.substring(1), { pageTitle: `${req.url}`.substring(1) });
 });
+
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, build));
+})
 
 /**
  * @swagger
