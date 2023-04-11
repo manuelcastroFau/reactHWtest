@@ -8,8 +8,8 @@ function Home () {
             <h1 className='display-1 text-success text-center'>
             Welcome to student Registry APP
             </h1>
-            <h1 className='display-3 text-danger text-center'>
-            Version 2.0 multideployment
+            <h1 className='display-5 text-dark text-center'>
+            Version 2.1 multideployment
             </h1>
             <Alert variant={'success'} className='display-4 text-center my-5'>React Version</Alert>
             {/* <h5 className='display-5 text-dark text-center pt-3text-center'>React Version</h5> */}
