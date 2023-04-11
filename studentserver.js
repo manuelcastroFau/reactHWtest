@@ -80,9 +80,11 @@ app.get('*-Student*', (req, res) => {
   res.status(200).render(`${req.url}`.substring(1), { pageTitle: `${req.url}`.substring(1) });
 });
 
-app.get('*', (req,res) => {
-  res.sendFile(path.join(__dirname, 'client/build','client/index.html'));
-})
+
+//to check later
+// app.get('*', (req,res) => {
+//   res.sendFile(path.join(__dirname, 'client/build','client/index.html'));
+// })
 
 /**
  * @swagger
