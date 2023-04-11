@@ -497,6 +497,6 @@ app.get('/search-name/:fname/:lname', async function (req, res) {
   }
 });
 
-port = process.env.PORT || 5678
+port = process.env.PORT || 8080
 var listener = app.listen(port); //start the server
 console.log('Server is running...');

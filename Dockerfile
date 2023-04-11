@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . .
 COPY ./entrypoint.sh .
 
-EXPOSE 5678
+EXPOSE 8080
 
 RUN npm install
 
