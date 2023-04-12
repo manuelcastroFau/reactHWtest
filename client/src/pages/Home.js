@@ -9,7 +9,7 @@ function Home () {
             Welcome to student Registry APP
             </h1>
             <h1 className='display-5 text-dark text-center'>
-            Version 2.1 multideployment
+            Version 2.2 multideployment
             </h1>
             <Alert variant={'success'} className='display-4 text-center my-5'>React Version</Alert>
             {/* <h5 className='display-5 text-dark text-center pt-3text-center'>React Version</h5> */}
