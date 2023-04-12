@@ -82,9 +82,10 @@ app.get('*-Student*', (req, res) => {
 
 
 //to check later
-// app.get('*', (req,res) => {
-//   res.sendFile(path.join(__dirname, 'client/build','index.html'));
-// })
+const myroutes = ['Home','AddStudent','GetStudent','DeleteStudent','UpdateStudent','ListStudents','SearchGPA','Search']
+app.get(myroutes, (req,res) => {
+  res.sendFile(path.join(__dirname, 'client/build','index.html'));
+})
 
 /**
  * @swagger
